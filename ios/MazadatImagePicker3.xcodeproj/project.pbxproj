@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* MazadatImagePicker3.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* MazadatImagePicker3.m */; };
-		F4FF95D7245B92E800C19C63 /*  MazadatImagePicker3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  MazadatImagePicker3.swift */; };
+		50DE3F8F2928048B0084095B /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DE3F8D292804740084095B /* CameraController.swift */; };
+		58F9A7C2F08A056DC49F8E41 /* Pods_MazadatImagePicker3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A2CA66150F55DCC092AC38 /* Pods_MazadatImagePicker3.framework */; };
+		F4FF95D7245B92E800C19C63 /* MazadatImagePicker3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* MazadatImagePicker3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +26,12 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libMazadatImagePicker3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMazadatImagePicker3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A2CA66150F55DCC092AC38 /* Pods_MazadatImagePicker3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MazadatImagePicker3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DE3F8D292804740084095B /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		50DE3F8E292804740084095B /* CameraController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraController.xib; sourceTree = "<group>"; };
+		AF6DAE32A9510ED73707D755 /* Pods-MazadatImagePicker3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MazadatImagePicker3.release.xcconfig"; path = "Target Support Files/Pods-MazadatImagePicker3/Pods-MazadatImagePicker3.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* MazadatImagePicker3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MazadatImagePicker3.m; sourceTree = "<group>"; };
+		BD4A09B9D0A657541D91A055 /* Pods-MazadatImagePicker3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MazadatImagePicker3.debug.xcconfig"; path = "Target Support Files/Pods-MazadatImagePicker3/Pods-MazadatImagePicker3.debug.xcconfig"; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* MazadatImagePicker3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MazadatImagePicker3-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* MazadatImagePicker3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazadatImagePicker3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F9A7C2F08A056DC49F8E41 /* Pods_MazadatImagePicker3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,14 +56,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		23B16D07808435AC166DE987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50A2CA66150F55DCC092AC38 /* Pods_MazadatImagePicker3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				50DE3F8D292804740084095B /* CameraController.swift */,
+				50DE3F8E292804740084095B /* CameraController.xib */,
 				F4FF95D6245B92E800C19C63 /* MazadatImagePicker3.swift */,
 				B3E7B5891CC2AC0600A0062D /* MazadatImagePicker3.m */,
 				F4FF95D5245B92E700C19C63 /* MazadatImagePicker3-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				9F1FDD829828D02592441CCE /* Pods */,
+				23B16D07808435AC166DE987 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		9F1FDD829828D02592441CCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD4A09B9D0A657541D91A055 /* Pods-MazadatImagePicker3.debug.xcconfig */,
+				AF6DAE32A9510ED73707D755 /* Pods-MazadatImagePicker3.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,6 +94,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "MazadatImagePicker3" */;
 			buildPhases = (
+				8B8C1F845F28CE9B251670E3 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -111,13 +140,38 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B8C1F845F28CE9B251670E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MazadatImagePicker3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DE3F8F2928048B0084095B /* CameraController.swift in Sources */,
 				F4FF95D7245B92E800C19C63 /* MazadatImagePicker3.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* MazadatImagePicker3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +275,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4A09B9D0A657541D91A055 /* Pods-MazadatImagePicker3.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -240,6 +295,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6DAE32A9510ED73707D755 /* Pods-MazadatImagePicker3.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
